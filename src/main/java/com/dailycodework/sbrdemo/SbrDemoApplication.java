@@ -4,14 +4,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class SbrServerApplication extends SpringBootServletInitializer {
+public class SbrDemoApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(SbrServerApplication.class, args);
+        SpringApplication.run(SbrDemoApplication.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(SbrServerApplication.class);
+        return builder.sources(SbrDemoApplication.class);
     }
 }
+
